@@ -3,32 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A showcase of my projects.">
-    <title>My Projects</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cmun.css">
+    <link rel="shortcut icon" type="image/x-icon" href="IMLogo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>My Projects</h1>
-        <nav>
-            <ul>
-                <li><a href="main.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="mappage.html">Map</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Project 1</h2>
-            <p>Description of Project 1.</p>
-        </section>
-        <section>
-            <h2>Project 2</h2>
-            <p>Description of Project 2.</p>
-        </section>
-    </main>
+    <nav>
+        <img src="IMLogo.png" alt="Logo" class="logo">
+        <ul>
+            <a href="main.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </ul>
+    </nav>
+<main>
+  <section aria-labelledby="projects-heading" class="projects">
+
+    <article class="project-card">
+      <h3>Machine Learning for Portfolio Construction</h3>
+      <div class="meta">Quantel Asset Management • August 2025</div>
+      <p>
+        Multi-factor research pipeline with XGBoost/LSTM prototypes, IC/ICIR analytics,
+        and monthly rebalancing backtests. Built an ETL pipeline for data ingestion and preprocessing.
+      </p>
+      <div class="tags">
+        <span class="tag">TensorFlow</span>
+        <span class="tag">Pandas</span>
+        <span class="tag">XGBoost</span>
+        <span class="tag">Backtesting</span>
+      </div>
+      <div class="card-actions">
+        <a class="btn" href="https://github.com/your-username/quantel" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <h3>Pixelated Microstrip Filter Optimizer</h3>
+      <div class="meta">University of Utah/NSF REU • August 2025</div>
+      <p>
+        RF filter generator utilizing reinforcement learning to generate pixel matrices,
+        runs solvers and export S-parameters. Parallel processing for multiple PCs using Paramiko/Dask.
+      </p>
+      <div class="tags">
+        <span class="tag">CST Studio</span>
+        <span class="tag">Ansys HFSS</span>
+        <span class="tag">RF Circuit Design</span>
+        <span class="tag">Dask</span>
+        <span class="tag">HPC</span>
+
+      </div>
+      <div class="card-actions">
+        <a class="btn" href="https://github.com/imungikar/NSF-REU-Codes" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-secondary" href="https://docs.google.com/presentation/d/1Xtz36IVHldRBVTgyaBKOe6G-fOD7G4US/edit?usp=sharing&ouid=100012695976432291904&rtpof=true&sd=true">Presentation</a>
+      </div>
+    </article>
+
+    
+    <article class="project-card">
+      <h3>ASL Detector</h3>
+      <div class="meta"> MontyHacks III • May 2023</div>
+      <p>
+        Trained a custom CNN-LSTM model for American Sign Language recognition. Features include webcam-enabled live inference and user-specific phrase storage.
+      </p>
+      <div class="tags">
+        <span class="tag">Vue.js</span>
+        <span class="tag">Python</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Django</span>
+      </div>
+      <div class="card-actions">
+        <a class="btn" href="https://github.com/imungikar/MontyHacks" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </article>
+
+    
+    <article class="project-card">
+      <h3>InstaMed</h3>
+      <div class="meta">MontyHacks IV • May 2022</div>
+      <p>
+        Full-stack medical records platform built to enable CRUD operations and location services for easy medical record storage, access, and sharing.
+      </p>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">SQL</span>
+        <span class="tag">APIs</span>
+        <span class="tag">HTML</span>
+      </div>
+      <div class="card-actions">
+        <a class="btn" href="https://github.com/tparmar/montyhacks_project" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </article>
+  </section>
+</main>
+
 </body>
 </html>

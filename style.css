@@ -1,11 +1,9 @@
-/* Reset some default browser styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Set default font and background for the body */
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.8;
@@ -14,13 +12,11 @@ body {
     padding: 20px;
 }
 
-/* Basic styling for headings */
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 15px;
-    font-weight: 700; /* Apply bold weight */
+    font-weight: 700; 
 }
 
-/*Naviation bar styling */
 nav {
     display: flex;
     justify-content: space-between;
@@ -40,28 +36,27 @@ nav {
 } 
 
 nav a {
-    color: #ffffff; /* Ensure links in the toolbar are white */
-    text-decoration: none; /* Remove underline */
-    font-weight: 500; /* Optional: make the text slightly bold */
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500; 
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Add hover effect */
-    border-radius: 5px; /* Optional: rounded corners */
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 5px;
 }
 
 a {
-    color: #ffffff; /* Ensure links are white */
-    text-decoration: none; /* Remove underline */
+    color: #ffffff; 
+    text-decoration: none; 
 }
 
-/* Navigation bar styling */
 nav ul {
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none; 
     margin: 0;
     padding: 0;
-    display: flex; /* Arrange items horizontally */
-    gap: 20px; /* Add spacing between items */
+    display: flex; 
+    gap: 20px; 
     margin-left: auto;
 }
 
@@ -75,29 +70,27 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff; /* Ensure links are white */
-    text-decoration: none; /* Remove underline */
+    color: #ffffff; 
+    text-decoration: none; 
     padding: 10px 15px;
     transition: background-color 0.3s ease;
     font-weight: 500;
 }
 
 nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Add hover effect */
-    border-radius: 5px; /* Optional: rounded corners */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
 }
 
 body {
-    padding-top: 80px; /* Adjust this value to match the height of your navbar */
+    padding-top: 80px; 
 }
 
 
-/* Basic styling for paragraphs */
 p {
     margin-bottom: 15px;
 }
 
-/* Links styling */
 a {
     color: #007BFF;
     text-decoration: none;
@@ -107,14 +100,12 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Basic container class for layout */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Utility class for clearfix */
 .clearfix::after {
     content: "";
     display: table;
@@ -136,13 +127,13 @@ li {
     object-fit: cover;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
     position: absolute;
-    top: 35%; /* Position at three-quarters of the screen */
-    right: 10%; /* Adjust horizontal position */
-    transform: translateY(-50%); /* Center vertically relative to the top */
+    top: 50%; 
+    right: 10%; 
+    transform: translateY(-50%); 
 }
 
 .content {
-    max-width: 50%; /* Limit text width to half the screen */
+    max-width: 50%; 
 }
 
 .hero {
@@ -186,5 +177,199 @@ li {
 
     .headshot {
         margin-top: 20px;
+    }
+}
+
+.text-straight {
+    max-width: 100%;
+}
+
+.projects {
+    max-width: 1200px;      
+    margin: 40px auto;       
+    padding: 0 20px;         
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); 
+    gap: 24px;               
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+.project-card h3 {
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.project-card .meta {
+    font-size: 0.95rem;
+    color: #c6c6c6;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #b0b0b0;
+    margin-bottom: 16px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.tag {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.06);
+}
+
+.card-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.18);
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease, border-color 0.2s ease;
+    background: rgba(255,255,255,0.08);
+}
+.btn:hover, .btn:focus {
+    background: rgba(255,255,255,0.14);
+    border-color: rgba(255,255,255,0.28);
+}
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn-secondary {
+    background: transparent;
+    border-color: rgba(255,255,255,0.15);
+}
+.btn-secondary:hover, .btn-secondary:focus {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.28);
+}
+
+@media (max-width: 900px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact {
+    max-width: 900px;
+    margin: 120px auto 60px; 
+    padding: 40px 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.contact p.lead {
+    color: #b0b0b0;
+    margin-bottom: 28px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    justify-items: center;
+}
+
+.icon-btn {
+    display: inline-grid;
+    place-items: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    text-decoration: none;
+    outline: none;
+}
+
+.icon-btn:hover,
+.icon-btn:focus {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+    border-color: rgba(255, 255, 255, 0.28);
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.icon-btn:active {
+    transform: translateY(-2px);
+}
+
+.icon-btn svg {
+    width: 44px;
+    height: 44px;
+    fill: #ffffff;
+    opacity: 0.95;
+}
+
+.icon-label {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #e8e8e8;
+}
+
+.contact-links {
+    margin-top: 24px;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact-links a {
+    color: #9ecbff;
+    text-decoration: none;
+}
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 420px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
     }
 }
